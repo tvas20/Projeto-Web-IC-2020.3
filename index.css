@@ -1,0 +1,126 @@
+/* mundança de fonte principal */
+* {  
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* mundança da cor da fonte do menu a esquerda */
+html, body {
+    color: #FFFFFF;
+}
+
+/* redefinição de padrões menu a esquerda */
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+/* define o menu a esquerda como uma 'parede' */
+.container {
+    display: flex;
+}
+
+/* formatação do menu a esquerda */
+.menu_esquerda {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100vh;
+    background-color: #db1e2f;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* formatação dos itens de cima do menu a esquerda */
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* formatação dos itens de baixo do menu a esquerda */
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* formatação da imagem no menu a esquerda */
+.profile {
+    border-radius: 8%;
+    margin-bottom: 1rem;
+}
+
+/* formatação do menu navegavel fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    width: 75%;
+    height: 10vh;
+    background-color: #C1BFC4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+/* formatação dos itens da parte navegavel não fixa */
+.main {
+    position: relative;
+    left: 25%;
+    margin: 1rem;
+    line-height: 130%;
+    color: #3C3C3D;
+}
+
+/* retirar a decoração de hiper link padrão */
+a {
+    text-decoration: none;
+}
+
+/* caixa que contem cada item do menu navegavel fixo */
+a {
+    width: 300px;
+    margin:20px;
+    border: 1px solid #ccc; padding: 10px;
+}
+
+/* criação de sombras quando mouse passa por cima */  
+a:hover  {
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5); -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* formatação dos itens da parte navegavel não fixa */
+.section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+    max-width: 75%;
+}
+
+/* formatação dos itens da parte navegavel não fixa */
+.section_content {
+    min-height: 90vh;
+}
+
+/* imagem fixa do background da pagina na parte navegavel não fixa */
+body {
+    background-image: url("./assets/cinlogo.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 77% 47%;
+    background-blend-mode: darken;
+  }
